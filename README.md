@@ -358,51 +358,6 @@ This repository is being built incrementally, with every feature implemented, te
 
 \---
 
-\## Architecture
-
-
-
-&#x20;                   Incoming Orders
-
-&#x20;                          │
-
-&#x20;                          ▼
-
-&#x20;                 +------------------+
-
-&#x20;                 | Matching Engine  |
-
-&#x20;                 +--------+---------+
-
-&#x20;                          │
-
-&#x20;         +----------------+----------------+
-
-&#x20;         ▼                                 ▼
-
-&#x20;   +-------------+                   +-------------+
-
-&#x20;   | Bid Order   |                   | Ask Order   |
-
-&#x20;   |    Book     |                   |    Book     |
-
-&#x20;   +-------------+                   +-------------+
-
-&#x20;                          │
-
-&#x20;                          ▼
-
-&#x20;                    Trade Generation
-
-&#x20;                          │
-
-&#x20;                          ▼
-
-&#x20;                  Execution Reports
-
-
-
-
 
 \## Future Improvements
 
