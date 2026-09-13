@@ -1,6 +1,6 @@
 #pragma once
 #include <cstdint>
-
+#include <compare>
 namespace lob {
 	class Price {
 	public:
@@ -13,7 +13,7 @@ namespace lob {
 		bool operator==(const Price& other) const noexcept = default;
 
 		[[nodiscard]]
-		bool operator<=>(const Price& other) const noexcept = default;
+		std::strong_ordering operator<=>(const Price& other) const noexcept = default;
 	private:
 		int64_t ticks_;
 	};
